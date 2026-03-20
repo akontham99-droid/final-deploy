@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head><title>Admin</title></head>
+<body>
+<h2>Admin Panel</h2>
+<input id="u" placeholder="username"><input id="p" placeholder="password">
+<input id="ph" placeholder="phone">
+<button onclick="add()">Add User</button>
+<pre id="out"></pre>
+<script>
+async function load(){
+ let r=await fetch('/api/admin/users'); let d=await r.json();
+ out.innerText=JSON.stringify(d,null,2);
+}
+async function add(){
+ await fetch('/api/admin/add-user',{method:'POST',headers:{'Content-Type':'application/json'},
+ body:JSON.stringify({username:u.value,password:p.value,phone:ph.value})});
+ load();
+}
+load();
+</script>
+</body></html>

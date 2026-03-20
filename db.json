@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "demo",
+      "password": "1234",
+      "phone": "9999999999",
+      "otp": "112504",
+      "stockyards": [
+        {
+          "name": "HYD",
+          "code": "HYD001"
+        }
+      ]
+    }
+  ]
+}

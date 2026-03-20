@@ -1,0 +1,13 @@
+{
+  "name": "og-final",
+  "version": "1.0.0",
+  "description": "OG OTP Clone Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
